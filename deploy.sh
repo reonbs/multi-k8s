@@ -1,6 +1,6 @@
 docker build -t reonbs/multi-client:latest -t reonbs/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t reonbs/multi-server:latest -t reonbs/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t reonbs/multi-worker:latest -t reonbs/multi-client:$SHA -f ./worker/Dockerfile ./worker
+docker build -t reonbs/multi-worker:latest -t reonbs/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push reonbs/multi-client:latest
 docker push reonbs/multi-server:latest
 docker push reonbs/multi-worker:latest
