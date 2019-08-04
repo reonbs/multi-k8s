@@ -16,4 +16,4 @@ kubectl set image deployments/worker-deployment server=reonbs/multi-worker:$SHA
 
 
 
-
+#lets know y
