@@ -1,0 +1,25 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+king: Certificate
+metadata:
+  name: multik8s-witmynd-com-tls
+spec:
+  secretName: multik8s-witmynd-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: multik8s.witmynd.com
+  dnsNames:
+    - multik8s.witmynd.com
+    - www.multik8s.witmynd.com
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - multik8s.witmynd.com
+          - www.multik8s.witmynd.com
+        
+
+
+           
+    
